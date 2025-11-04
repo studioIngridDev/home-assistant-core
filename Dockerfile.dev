@@ -4,7 +4,7 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 # Install Python 3.13 and set it as the default version
 RUN apt-get update && \
-    apt-get install -y python3.13 python3.13-distutils && \
+    apt-get install -y python3.13 && \
     ln -sf /usr/bin/python3.13 /usr/bin/python3
 
 RUN \
