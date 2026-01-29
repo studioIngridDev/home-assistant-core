@@ -113,6 +113,7 @@ virtualization/vagrant/config
 !.vscode/extensions.json
 !.vscode/tasks.json
 !.vscode/settings.default.jsonc
+!.vscode/dev-ingrid*
 .env
 
 # Windows Explorer
