@@ -18,7 +18,7 @@ git fetch origin || fail "git fetch origin failed"
 git rebase --abort >/dev/null 2>&1 || true
 
 # Rebase with automatic conflict resolution: origin/dev-copy wins
-git rebase -X ours origin/dev || {
+git rebase -X theirs origin/dev || {
   echo "FAILED: rebase onto origin/dev even with automatic conflict resolution"
   echo "HINT: try: git rebase --abort"
   exit 1
