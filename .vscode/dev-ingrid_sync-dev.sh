@@ -10,7 +10,7 @@ current_branch=$(git branch --show-current) || fail "could not determine current
 
 git checkout dev || fail "could not checkout dev"
 
-git fetch upstream || fail "git fetch upstream failed (is upstream configured?)"
+git fetch upstream dev || fail "git fetch upstream failed (is upstream configured?)"
 
 git rebase upstream/dev || {
   echo "FAILED: rebase onto upstream/dev (likely conflicts)"
